@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
 import Home from "./pages/Home";
 import UseState from "./pages/UseState";
 import UseEffect from "./pages/UseEffect";
+import UseContext from "./pages/UseContext";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/state" element={<UseState />} />
       <Route path="/effect" element={<UseEffect />} />
+      <Route path="/context" element={<UseContext />} />
     </Routes>
   );
 }
