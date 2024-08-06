@@ -12,10 +12,10 @@ const UseEffect = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
+  useEffect(async () => {
     setIsLoading(true);
 
-    fetch("https://koreanjson.com/posts/1")
+    await fetch("https://koreanjson.com/posts/1")
       .then((response) => response.json())
       .then((data) => {
         setPageInfo({
