@@ -24,10 +24,19 @@ const Home = () => {
               </a>
             </li>
             <li style={{ margin: "10px" }}>
-              <a href=""></a>
+              <a href="" onClick={handlePageMove("/effect")}>
+                useEffect로 이동
+              </a>
             </li>
             <li style={{ margin: "10px" }}>
-              <a href=""></a>
+              <a href="" onClick={handlePageMove("/context")}>
+                useContext로 이동
+              </a>
+            </li>
+            <li style={{ margin: "10px" }}>
+              <a href="" onClick={handlePageMove("/context")}>
+                이동
+              </a>
             </li>
           </ul>
         </div>
