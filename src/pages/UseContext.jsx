@@ -1,5 +1,5 @@
 import { ThemeProvider } from "../utils/ThemeProvider";
-import contextButton from "../components/contextButton";
+import ContextButton from "../components/ContextButton";
 
 const UseContext = () => {
   return (

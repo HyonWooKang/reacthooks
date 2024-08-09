@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "../utils/ThemeProvider";
 
-const contextButton = () => {
+const ContextButton = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
@@ -28,4 +28,4 @@ const contextButton = () => {
   );
 };
 
-export default contextButton;
+export default ContextButton;
