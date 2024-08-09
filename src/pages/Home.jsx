@@ -34,8 +34,8 @@ const Home = () => {
               </a>
             </li>
             <li style={{ margin: "10px" }}>
-              <a href="" onClick={handlePageMove("/context")}>
-                이동
+              <a href="" onClick={handlePageMove("/ref")}>
+                useRef 이동
               </a>
             </li>
           </ul>
