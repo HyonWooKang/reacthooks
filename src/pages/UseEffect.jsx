@@ -45,13 +45,13 @@ const UseEffect = () => {
 
   return (
     <>
-      <main>
+      <main style={{ margin: "30px" }}>
         <section>
           <h4>title</h4>
           <title>{pageInfo.title}</title>
         </section>
         <section>
-          <div>
+          <div style={{ width: "30vw" }}>
             <h4>content</h4>
             <p>{pageInfo.content}</p>
           </div>
@@ -59,6 +59,9 @@ const UseEffect = () => {
             <h4>userId</h4>
             <p>{pageInfo.userId}</p>
           </div>
+        </section>
+        <section>
+          <button onClick={fetchData}>다시 조회하기</button>
         </section>
       </main>
     </>
