@@ -12,28 +12,33 @@ const UseEffect = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  useEffect(async () => {
-    setIsLoading(true);
-
-    await fetch("https://koreanjson.com/posts/1")
-      .then((response) => response.json())
-      .then((data) => {
-        setPageInfo({
-          id: data.id,
-          title: data.title,
-          content: data.content,
-          createdAt: data.createdAt,
-          updatedAt: data.updatedAt,
-          userId: data.UserId,
-        });
-        setIsLoading(false);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-        setError(error);
-        setIsLoading(false);
-      });
+  useEffect(() => {
+    fetchData(); // api 조회 후 data 담는 과정
   }, []);
+
+  const fetchData = async () => {
+    setIsLoading(true);
+    try {
+      const response = await fetch("https://koreanjson.com/posts/1");
+      const data = await response.json();
+
+      console.log(`data is ${data}`);
+
+      setPageInfo({
+        id: data.id,
+        title: data.title,
+        content: data.content,
+        createdAt: data.createdAt,
+        updatedAt: data.updatedAt,
+        userId: data.UserId,
+      });
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      setError(error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   if (isLoading) return <div>Loading Error</div>;
   if (error) return <div>Error: {error.message}</div>;
