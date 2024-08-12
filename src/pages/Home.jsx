@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <>
-      <main style={{ backgroundColor: "A3C6C4" }}>
+      <main>
         <div style={{ margin: "30px" }}>
           <h3 style={{ margin: "0 0 0 30px" }}>목록</h3>
           <ul>
