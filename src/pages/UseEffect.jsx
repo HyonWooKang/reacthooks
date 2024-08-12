@@ -45,13 +45,13 @@ const UseEffect = () => {
 
   return (
     <>
-      <main style={{ margin: "30px" }}>
+      <main style={{ margin: "30px", width: "30vw" }}>
         <section>
           <h4>title</h4>
-          <title>{pageInfo.title}</title>
+          <p>{pageInfo.title}</p>
         </section>
         <section>
-          <div style={{ width: "30vw" }}>
+          <div>
             <h4>content</h4>
             <p>{pageInfo.content}</p>
           </div>
