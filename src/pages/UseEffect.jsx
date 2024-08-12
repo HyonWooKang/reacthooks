@@ -22,7 +22,7 @@ const UseEffect = () => {
       const response = await fetch("https://koreanjson.com/posts/1");
       const data = await response.json();
 
-      console.log(`data is ${data}`);
+      console.log(`data is ${JSON.stringify(data)}`);
 
       setPageInfo({
         id: data.id,
