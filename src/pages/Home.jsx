@@ -13,10 +13,9 @@ const Home = () => {
 
   return (
     <>
-      <head>This is a React Hook study page by Spencer</head>
-      <main>
-        <div style={{ margin: "20px" }}>
-          <h3>목록</h3>
+      <main style={{ backgroundColor: "A3C6C4" }}>
+        <div style={{ margin: "30px" }}>
+          <h3 style={{ margin: "0 0 0 30px" }}>목록</h3>
           <ul>
             <li style={{ margin: "10px" }}>
               <a href="" onClick={handlePageMove("/state")}>
