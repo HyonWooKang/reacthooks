@@ -19,22 +19,27 @@ const Home = () => {
           <ul>
             <li style={{ margin: "10px" }}>
               <a href="" onClick={handlePageMove("/state")}>
-                useState로 이동
+                UseState로 이동
               </a>
             </li>
             <li style={{ margin: "10px" }}>
               <a href="" onClick={handlePageMove("/effect")}>
-                useEffect로 이동
+                UseEffect로 이동
               </a>
             </li>
             <li style={{ margin: "10px" }}>
               <a href="" onClick={handlePageMove("/context")}>
-                useContext로 이동
+                UseContext로 이동
               </a>
             </li>
             <li style={{ margin: "10px" }}>
               <a href="" onClick={handlePageMove("/ref")}>
-                useRef 이동
+                UseRef 이동
+              </a>
+            </li>
+            <li style={{ margin: "10px" }}>
+              <a href="" onClick={handlePageMove("/memo")}>
+                UseMemo 이동
               </a>
             </li>
           </ul>
