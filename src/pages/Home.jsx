@@ -42,6 +42,11 @@ const Home = () => {
                 UseMemo 이동
               </a>
             </li>
+            <li style={{ margin: "10px" }}>
+              <a href="" onClick={handlePageMove("/callback")}>
+                UseCallBack 이동
+              </a>
+            </li>
           </ul>
         </div>
       </main>
