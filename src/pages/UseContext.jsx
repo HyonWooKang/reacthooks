@@ -1,10 +1,10 @@
 import { ThemeProvider } from "../utils/ThemeProvider";
-import ContextButton from "../components/ContextButton";
+import ContextButton from "../components/contextButton";
 
 const UseContext = () => {
   return (
     <ThemeProvider>
-      <contextButton />
+      <ContextButton />
     </ThemeProvider>
   );
 };
