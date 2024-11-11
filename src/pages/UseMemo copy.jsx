@@ -4,7 +4,7 @@ const recordSample = [1, 3, 1, 8, 9, 8, 10];
 
 const initialValue = [0];
 
-const UseMemoPage = () => {
+const UseMemoPageTwo = () => {
   const [records, setRecords] = useState(initialValue);
   const [number, setNumber] = useState("");
 
@@ -54,4 +54,4 @@ const UseMemoPage = () => {
   );
 };
 
-export default UseMemoPage;
+export default UseMemoPageTwo;
